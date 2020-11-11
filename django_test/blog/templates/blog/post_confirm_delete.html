@@ -8,13 +8,13 @@
         <form method = "POST">
             {% csrf_token %}
             <fieldset class = "form-group">
-                <legend class = "border-bottom mb-4">Delete Post</legend>
-                <h1>Are you sure you want to delete the post "{{ object.title }}"</h1>
+                <legend class = "border-bottom mb-4">Borrar Publicación</legend>
+                <h1>Estás segur@ de que quieres borrar la publicación: "{{ object.title }}"</h1>
             </fieldset>
             <div class = "form-group">
-                <button class="btn btn-outline-danger" type = "submit">Yes, Delete</button>
+                <button class="btn btn-outline-danger" type = "submit">Sí, Borrar</button>
 
-                <a class="btn btn-outline-secondary" href="{% url 'post-detail' object.id %}">Cancel</a>
+                <a class="btn btn-outline-secondary" href="{% url 'post-detail' object.id %}">Cancelar</a>
             </div>
         </form>
         

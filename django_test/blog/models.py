@@ -13,6 +13,8 @@ class Post(models.Model):
 
     author = models.ForeignKey(User, on_delete = models.CASCADE)
 
+    song = models.FileField(upload_to='canciones', default="", blank= True, null=True)
+
     def __str__(self):
         return self.title
         

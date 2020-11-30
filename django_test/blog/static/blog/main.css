@@ -1,7 +1,8 @@
 body {
-    background: #fafafa;
+    background-image: url('/media/backgroundoficial.png');
     color: #333333;
     margin-top: 5rem;
+    font-family: monospace;
   }
   
   h1, h2, h3, h4, h5, h6 {
@@ -13,7 +14,7 @@ body {
   }
   
   .bg-steel {
-    background-color: #8c4b4b;
+    background-color: #0084ff;
   }
   
   .site-header .navbar-nav .nav-link {
@@ -23,6 +24,7 @@ body {
   .site-header .navbar-nav .nav-link:hover {
     color: #ffffff;
   }
+  
   
   .site-header .navbar-nav .nav-link.active {
     font-weight: 500;
@@ -34,6 +36,10 @@ body {
     border: 1px solid #dddddd;
     border-radius: 3px;
     margin-bottom: 20px;
+  }
+  .content-section:hover, .content-section:focus{
+    transform: scale(1.1);
+    overflow: hidden;
   }
   
   .article-title {
@@ -83,8 +89,39 @@ body {
     font-size: 2.5rem;
   }
 
- 
+  .audioPlayer{
+    display: block;
+    border-radius: 20px;
+    margin:0 auto;
+    background:  #ffc48e;
+    
+  }
 
-  audio:hover{
-    transform: scale(1.1);
-    filter: drop-shadow(2px 3px 3px #333);}
+  audio:hover, audio:focus, audio:active
+{
+-webkit-box-shadow: 15px 15px 20px rgba(0,0, 0, 0.4);
+-moz-box-shadow: 15px 15px 20px rgba(0,0, 0, 0.4);
+box-shadow: 15px 15px 20px rgba(0,0, 0, 0.4);
+-webkit-transform: scale(1.05);
+-moz-transform: scale(1.05);
+transform: scale(1.05);
+}
+
+audio
+{
+-webkit-transition:all 0.5s linear;
+-moz-transition:all 0.5s linear;
+-o-transition:all 0.5s linear;
+transition:all 0.5s linear;
+-moz-box-shadow: 2px 2px 4px 0px #006773;
+-webkit-box-shadow:  2px 2px 4px 0px #006773;
+box-shadow: 2px 2px 4px 0px #006773;
+-moz-border-radius:7px 7px 7px 7px ;
+-webkit-border-radius:7px 7px 7px 7px ;
+border-radius:7px 7px 7px 7px ;
+}
+
+audio::-webkit-media-controls-play-button
+{
+  background-color:#d8d8d8;
+}

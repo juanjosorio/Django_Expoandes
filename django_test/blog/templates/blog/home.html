@@ -13,7 +13,7 @@
           <p class="article-content">{{ post.content }}</p>
 
           {% if post.song.url != '' %}
-            <audio class= "audio-edit" src="{{ post.song.url }}" controls></audio>
+            <audio class="audioPlayer" preload="auto" src="{{ post.song.url }}" controls></audio>
           {% endif %}
         </div>
       </article>

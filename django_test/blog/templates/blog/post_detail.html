@@ -16,9 +16,14 @@
                     </div>
                     
                 {% endif %}
+
+                
             </div>
         <h2 class="article-title">{{ object.title }}</h2>
         <p class="article-content">{{ object.content }}</p>
+        {% if post.song.url != '' %}
+            <audio class="audioPlayer" preload="auto" src="{{ post.song.url }}" controls></audio>
+        {% endif %}
     </div>
     </article>
 
